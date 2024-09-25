@@ -1,0 +1,333 @@
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    line-height: 1.6;
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #fff700;
+    padding-top: 20px;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 20px 0;
+}
+
+.navbar ul li a {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    padding: 15px;
+    background-color: #0000005c;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #000000;
+    transform: scale(1.2);
+}
+
+.navbar ul li a:active {
+    transform: scale(1.1);
+    background-color: #ff0000d1;
+}
+
+/* Contenedor principal y diseño de cajas */
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    margin-left: 220px;
+}
+
+.box {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.sofia {
+    border-top: 5px solid #ff6666;
+}
+
+.angel {
+    border-top: 5px solid #66b3ff;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Estilos para el contenido */
+.contenido {
+    margin-left: 220px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: start;
+    width: calc(100% - 240px);
+}
+
+.contenidoo {
+    margin-left: 220px;
+    padding: 20px;
+    display: block;
+    gap: 20px;
+    justify-content: start;
+    width: calc(100% - 240px);
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contenidoo h1 {
+    width: 90%;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #000000;
+    border-bottom: 2px solid #0000006e;
+    padding-bottom: 10px;
+}
+
+.contenidoo p {
+    width: 90%;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.contenidoo hr {
+    width: 90%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0000006e;
+}
+
+/* Animación para imágenes en .contenidoo */
+.contenidoo img {
+    width: calc(25% - 20px);
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contenidoo img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Grid de imágenes */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+/* Animación para imágenes en .image-grid */
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección de introducción */
+section {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+section img {
+    width: 80%;
+    height: auto;
+    max-height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.intro {
+    width: 300%;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.intro h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo de misión y visión */
+.vision-mission {
+    width: 300%;
+    padding: 40px 20px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.vision-mission h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.vision-mission p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+}
+
+/* Conclusión animada */
+.conclusion-container {
+    margin: 50px auto;
+    width: 80%;
+    text-align: center;
+    padding: 20px;
+}
+
+.conclusion-title {
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+}
+
+.conclusion-info {
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.conclusion-title:hover + .conclusion-info {
+    opacity: 1;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+.conclusion-container h2 {
+    color: #000; 
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
